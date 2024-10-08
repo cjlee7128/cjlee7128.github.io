@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ "/assets/style.css" | relative_url }}">
+</head>
+<body>
+    <!-- Header with Name -->
+    <header class="header">
+        <h1>Changjae Lee</h1>
+        <h2>Ph.D. Student, Computer Science</h2>
+    </header>
+
+    <!-- UB-Themed Navigation Bar -->
+    <nav class="ub-navbar">
+        <div class="nav-container">
+            <a href="#about">About</a>
+            <a href="#research">Research</a>
+            <a href="#publications">Publications</a>
+            <a href="#projects">Projects</a>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <main class="container">
+        {{ content }}
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Changjae Lee</p>
+    </footer>
+</body>
+</html>
