@@ -3,34 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }}</title>
+    <title>{% if page.title %}{{ page.title }}{% else %}Changjae Lee - Ph.D. Student in Computer Science{% endif %}</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="{{ "/assets/style.css" | relative_url }}">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Academic personal website of Changjae Lee, Ph.D. Student in Computer Science at the University at Buffalo. Research in Human-AI interaction, databases, and agentic AI.">
+    <meta name="keywords" content="Changjae Lee, University at Buffalo, Computer Science, PhD, Research, Agentic AI, Human-AI Interaction, Databases, SABER, Spark, MLModelScope">
+    <meta name="author" content="Changjae Lee">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Changjae Lee - Computer Science Ph.D. Student">
+    <meta property="og:description" content="Research, publications, and projects of Changjae Lee in Human-AI interaction and agentic AI.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cjlee7128.github.io">
+    
+    <!-- Inline theme initializer to prevent flash of unstyled content -->
+    <script>
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
 </head>
 <body>
-    <!-- Header with Name -->
-    <header class="header">
-        <h1>Changjae Lee</h1>
-        <h2>Ph.D. Student, Computer Science</h2>
+    <!-- Sticky Navigation Bar -->
+    <header class="navbar-header" id="navbar">
+        <div class="nav-container">
+            <a href="#about" class="nav-brand">Changjae Lee</a>
+            
+            <nav class="nav-menu">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#publications">Publications</a>
+                <a href="#experience">Experience</a>
+                <a href="#skills">Skills & Awards</a>
+            </nav>
+            
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Toggle dark mode" class="theme-btn">
+                    <!-- SVG Moon Icon -->
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                    </svg>
+                    <!-- SVG Sun Icon -->
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m0-12.728l.707.707m12.728 12.728l.707-.707M12 8a4 4 0 100 8 4 4 0 000-8z" />
+                    </svg>
+                </button>
+                
+                <button id="mobile-toggle" aria-label="Toggle navigation menu" class="mobile-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
     </header>
 
-    <!-- UB-Themed Navigation Bar -->
-    <nav class="ub-navbar">
-        <div class="nav-container">
-            <a href="#about">About</a>
-            <a href="#research">Research</a>
-            <a href="#publications">Publications</a>
-            <a href="#projects">Projects</a>
-        </div>
-    </nav>
-
-    <!-- Page Content -->
-    <main class="container">
+    <!-- Main Content -->
+    <main class="main-container">
         {{ content }}
     </main>
 
     <!-- Footer -->
-    <footer>
-        <p>© 2024 Changjae Lee</p>
+    <footer class="footer">
+        <div class="footer-container">
+            <p>© 2026 Changjae Lee. All rights reserved.</p>
+            <p class="footer-sub">Ph.D. Student in Computer Science at University at Buffalo</p>
+        </div>
     </footer>
+
+    <!-- Theme & Interactivity Script -->
+    <script>
+        // Theme toggle logic
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        
+        themeToggleBtn.addEventListener('click', () => {
+            if (document.documentElement.classList.contains('dark')) {
+                document.documentElement.classList.remove('dark');
+                localStorage.setItem('theme', 'light');
+            } else {
+                document.documentElement.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+
+        // Mobile menu toggle
+        const mobileToggleBtn = document.getElementById('mobile-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        mobileToggleBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when a nav link is clicked
+        const navLinks = document.querySelectorAll('.nav-menu a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Active Navigation Highlight & Smooth Scroll Offset
+        const sections = document.querySelectorAll('section[id]');
+        const navItems = document.querySelectorAll('.nav-menu a');
+        
+        window.addEventListener('scroll', () => {
+            let current = '';
+            const scrollPos = window.scrollY + 120; // offset navbar height
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navItems.forEach(item => {
+                item.classList.remove('active');
+                if (item.getAttribute('href').slice(1) === current) {
+                    item.classList.add('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
