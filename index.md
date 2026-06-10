@@ -250,21 +250,21 @@ title: "Changjae Lee - Ph.D. Student in Computer Science"
 <section id="publications">
   <h2 class="section-title">Publications</h2>
   
-  <div class="pub-container">
+  <div class="publication-container">
     
     <!-- Preprints -->
     <div>
-      <h3 class="pub-subsection-title">Preprints <span>3</span></h3>
-      <div class="pub-list">
+      <h3 class="publication-subsection-title">Preprints <span>3</span></h3>
+      <div class="publication-list">
         
-        <div class="pub-item">
-          <div class="pub-number">1</div>
-          <div class="pub-content">
-            <h4 class="pub-title">SABER: A SQL-Compatible Semantic Document Processing System Based on Extended Relational Algebra</h4>
-            <p class="pub-authors"><strong>C. Lee</strong>, Z. Zhao, and J. Xiong</p>
-            <p class="pub-journal">arXiv preprint arXiv:2509.00277, Aug. 2025</p>
-            <div class="pub-links">
-              <a href="https://arxiv.org/abs/2509.00277" target="_blank" class="pub-btn">
+        <div class="publication-item">
+          <div class="publication-number">1</div>
+          <div class="publication-content">
+            <h4 class="publication-title">SABER: A SQL-Compatible Semantic Document Processing System Based on Extended Relational Algebra</h4>
+            <p class="publication-authors"><strong>C. Lee</strong>, Z. Zhao, and J. Xiong</p>
+            <p class="publication-journal">arXiv preprint arXiv:2509.00277, Aug. 2025</p>
+            <div class="publication-links">
+              <a href="https://arxiv.org/abs/2509.00277" target="_blank" class="publication-btn">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
@@ -274,14 +274,14 @@ title: "Changjae Lee - Ph.D. Student in Computer Science"
           </div>
         </div>
 
-        <div class="pub-item">
-          <div class="pub-number">2</div>
-          <div class="pub-content">
-            <h4 class="pub-title">Large Language Models have Intrinsic Self-Correction Ability</h4>
-            <p class="pub-authors">D. Liu, A. Nassereldine, Z. Yang, C. Xu, Y. Hu, J. Li, U. Kumar, <strong>C. Lee</strong>, and J. Xiong</p>
-            <p class="pub-journal">arXiv preprint arXiv:2406.15673, Jun. 2024</p>
-            <div class="pub-links">
-              <a href="https://arxiv.org/abs/2406.15673" target="_blank" class="pub-btn">
+        <div class="publication-item">
+          <div class="publication-number">2</div>
+          <div class="publication-content">
+            <h4 class="publication-title">Large Language Models have Intrinsic Self-Correction Ability</h4>
+            <p class="publication-authors">D. Liu, A. Nassereldine, Z. Yang, C. Xu, Y. Hu, J. Li, U. Kumar, <strong>C. Lee</strong>, and J. Xiong</p>
+            <p class="publication-journal">arXiv preprint arXiv:2406.15673, Jun. 2024</p>
+            <div class="publication-links">
+              <a href="https://arxiv.org/abs/2406.15673" target="_blank" class="publication-btn">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
@@ -291,14 +291,14 @@ title: "Changjae Lee - Ph.D. Student in Computer Science"
           </div>
         </div>
 
-        <div class="pub-item">
-          <div class="pub-number">3</div>
-          <div class="pub-content">
-            <h4 class="pub-title">From Keyboard to Chatbot: An AI-powered Integration Platform with Large-Language Models for Teaching Computational Thinking for Young Children</h4>
-            <p class="pub-authors"><strong>C. Lee</strong> and J. Xiong</p>
-            <p class="pub-journal">arXiv preprint arXiv:2405.00750, May 2024</p>
-            <div class="pub-links">
-              <a href="https://arxiv.org/abs/2405.00750" target="_blank" class="pub-btn">
+        <div class="publication-item">
+          <div class="publication-number">3</div>
+          <div class="publication-content">
+            <h4 class="publication-title">From Keyboard to Chatbot: An AI-powered Integration Platform with Large-Language Models for Teaching Computational Thinking for Young Children</h4>
+            <p class="publication-authors"><strong>C. Lee</strong> and J. Xiong</p>
+            <p class="publication-journal">arXiv preprint arXiv:2405.00750, May 2024</p>
+            <div class="publication-links">
+              <a href="https://arxiv.org/abs/2405.00750" target="_blank" class="publication-btn">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
@@ -313,42 +313,42 @@ title: "Changjae Lee - Ph.D. Student in Computer Science"
 
     <!-- Conference Proceedings -->
     <div>
-      <h3 class="pub-subsection-title">Conference Proceedings <span>4</span></h3>
-      <div class="pub-list">
+      <h3 class="publication-subsection-title">Conference Proceedings <span>4</span></h3>
+      <div class="publication-list">
 
-        <div class="pub-item">
-          <div class="pub-number">1</div>
-          <div class="pub-content">
-            <h4 class="pub-title">From Visual to Multimodal Programming: Designing an Interface to Externalize Decomposition Thinking for Novice Learners</h4>
-            <p class="pub-authors"><strong>C. Lee</strong>, Q. Zheng, and J. Xiong</p>
-            <p class="pub-journal">Proceedings of the 31st International Conference on Intelligent User Interfaces (<strong>IUI '26</strong>), Mar. 2026</p>
+        <div class="publication-item">
+          <div class="publication-number">1</div>
+          <div class="publication-content">
+            <h4 class="publication-title">From Visual to Multimodal Programming: Designing an Interface to Externalize Decomposition Thinking for Novice Learners</h4>
+            <p class="publication-authors"><strong>C. Lee</strong>, Q. Zheng, and J. Xiong</p>
+            <p class="publication-journal">Proceedings of the 31st International Conference on Intelligent User Interfaces (<strong>IUI '26</strong>), Mar. 2026</p>
           </div>
         </div>
 
-        <div class="pub-item">
-          <div class="pub-number">2</div>
-          <div class="pub-content">
-            <h4 class="pub-title">Human-Robot Interface to Operate Robotic Systems via Muscle Synergy-Based Kinodynamic Information Transfer</h4>
-            <p class="pub-authors">J. Kim, D. H. Sim, H.-J. Jung, J.-H. Yoo, <strong>C. Lee</strong>, and H. U. Yoon</p>
-            <p class="pub-journal">Proceedings of the 19th International Conference on Ubiquitous Robots (<strong>UR '22</strong>), Jul. 2022</p>
+        <div class="publication-item">
+          <div class="publication-number">2</div>
+          <div class="publication-content">
+            <h4 class="publication-title">Human-Robot Interface to Operate Robotic Systems via Muscle Synergy-Based Kinodynamic Information Transfer</h4>
+            <p class="publication-authors">J. Kim, D. H. Sim, H.-J. Jung, J.-H. Yoo, <strong>C. Lee</strong>, and H. U. Yoon</p>
+            <p class="publication-journal">Proceedings of the 19th International Conference on Ubiquitous Robots (<strong>UR '22</strong>), Jul. 2022</p>
           </div>
         </div>
 
-        <div class="pub-item">
-          <div class="pub-number">3</div>
-          <div class="pub-content">
-            <h4 class="pub-title">A dimension reduction technique to classify upper arm gym-workouts in realtime with TinyML</h4>
-            <p class="pub-authors">H.-J. Jung, <strong>C. J. Lee</strong>, and H.-U. Yoon</p>
-            <p class="pub-journal">Proceedings of the 22th International Symposium on Advanced Intelligent Systems, Dec. 2021</p>
+        <div class="publication-item">
+          <div class="publication-number">3</div>
+          <div class="publication-content">
+            <h4 class="publication-title">A dimension reduction technique to classify upper arm gym-workouts in realtime with TinyML</h4>
+            <p class="publication-authors">H.-J. Jung, <strong>C. J. Lee</strong>, and H.-U. Yoon</p>
+            <p class="publication-journal">Proceedings of the 22th International Symposium on Advanced Intelligent Systems, Dec. 2021</p>
           </div>
         </div>
 
-        <div class="pub-item">
-          <div class="pub-number">4</div>
-          <div class="pub-content">
-            <h4 class="pub-title">Driving simulator and driver monitoring system technologies: a short survey</h4>
-            <p class="pub-authors">D. H. Sim, <strong>C. J. Lee</strong>, and H.-U. Yoon</p>
-            <p class="pub-journal">Proceedings of the 22th International Symposium on Advanced Intelligent Systems, Dec. 2021</p>
+        <div class="publication-item">
+          <div class="publication-number">4</div>
+          <div class="publication-content">
+            <h4 class="publication-title">Driving simulator and driver monitoring system technologies: a short survey</h4>
+            <p class="publication-authors">D. H. Sim, <strong>C. J. Lee</strong>, and H.-U. Yoon</p>
+            <p class="publication-journal">Proceedings of the 22th International Symposium on Advanced Intelligent Systems, Dec. 2021</p>
           </div>
         </div>
 
@@ -357,24 +357,24 @@ title: "Changjae Lee - Ph.D. Student in Computer Science"
 
     <!-- Journal Articles -->
     <div>
-      <h3 class="pub-subsection-title">Journal Articles <span>2</span></h3>
-      <div class="pub-list">
+      <h3 class="publication-subsection-title">Journal Articles <span>2</span></h3>
+      <div class="publication-list">
 
-        <div class="pub-item">
-          <div class="pub-number">1</div>
-          <div class="pub-content">
-            <h4 class="pub-title">Korean morphological analysis method based on BERT-fused transformer model</h4>
-            <p class="pub-authors"><strong>C. Lee</strong> and D. Ra</p>
-            <p class="pub-journal">KIPS Transactions on Software and Data Engineering, vol. 11, no. 4, pp. 169-178, Apr. 2022</p>
+        <div class="publication-item">
+          <div class="publication-number">1</div>
+          <div class="publication-content">
+            <h4 class="publication-title">Korean morphological analysis method based on BERT-fused transformer model</h4>
+            <p class="publication-authors"><strong>C. Lee</strong> and D. Ra</p>
+            <p class="publication-journal">KIPS Transactions on Software and Data Engineering, vol. 11, no. 4, pp. 169-178, Apr. 2022</p>
           </div>
         </div>
 
-        <div class="pub-item">
-          <div class="pub-number">2</div>
-          <div class="pub-content">
-            <h4 class="pub-title">Classifying upper arm gym-workouts via convolutional neural network by imputing a biopotential-kinematic relationship</h4>
-            <p class="pub-authors">J.-H. Yoo, H.-J. Jung, Y.-S. Jung, Y.-B. Kim, <strong>C.-J. Lee</strong>, S.-T. Shin, and H.-U. Yoon</p>
-            <p class="pub-journal">Applied Sciences, vol. 11, no. 6, p. 2845, Mar. 2021</p>
+        <div class="publication-item">
+          <div class="publication-number">2</div>
+          <div class="publication-content">
+            <h4 class="publication-title">Classifying upper arm gym-workouts via convolutional neural network by imputing a biopotential-kinematic relationship</h4>
+            <p class="publication-authors">J.-H. Yoo, H.-J. Jung, Y.-S. Jung, Y.-B. Kim, <strong>C.-J. Lee</strong>, S.-T. Shin, and H.-U. Yoon</p>
+            <p class="publication-journal">Applied Sciences, vol. 11, no. 6, p. 2845, Mar. 2021</p>
           </div>
         </div>
 
