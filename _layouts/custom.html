@@ -38,14 +38,26 @@
     <!-- Sticky Navigation Bar -->
     <header class="navbar-header" id="navbar">
         <div class="nav-container">
+            {% if page.url == "/" or page.url == "/index.html" %}
+            <a href="#about" class="nav-brand">Changjae Lee</a>
+            {% else %}
             <a href="{{ '/' | relative_url }}#about" class="nav-brand">Changjae Lee</a>
+            {% endif %}
             
             <nav class="nav-menu">
+                {% if page.url == "/" or page.url == "/index.html" %}
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#publications">Publications</a>
+                <a href="#experience">Experience</a>
+                <a href="#skills">Skills & Awards</a>
+                {% else %}
                 <a href="{{ '/' | relative_url }}#about">About</a>
                 <a href="{{ '/' | relative_url }}#projects">Projects</a>
                 <a href="{{ '/' | relative_url }}#publications">Publications</a>
                 <a href="{{ '/' | relative_url }}#experience">Experience</a>
                 <a href="{{ '/' | relative_url }}#skills">Skills & Awards</a>
+                {% endif %}
                 <a href="{{ '/blog/' | relative_url }}">Blog</a>
             </nav>
             
