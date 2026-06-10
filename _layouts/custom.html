@@ -10,8 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="{{ "/assets/style.css" | relative_url }}">
+    <!-- Stylesheet with cache busting -->
+    <link rel="stylesheet" href="{{ "/assets/style.css" | relative_url }}?v={{ site.time | date: '%Y%m%d%H%M%S' }}">
     
     <!-- SEO Meta Tags -->
     <meta name="description" content="Academic personal website of Changjae Lee, Ph.D. Student in Computer Science at the University at Buffalo. Research in Human-AI interaction, databases, and agentic AI.">
