@@ -204,6 +204,47 @@ title: "Changjae Lee - Ph.D. Student in Computer Science"
 </section>
 
 <!-- ==========================================================================
+     BLOG SECTION
+     ========================================================================== -->
+<section id="blog">
+  <h2 class="section-title">Latest Blog Posts</h2>
+  
+  {% if site.posts.size > 0 %}
+    <div class="blog-recent-grid">
+      {% for post in site.posts limit:3 %}
+        <article class="blog-recent-card">
+          <div class="blog-recent-meta">
+            <span class="blog-recent-date">{{ post.date | date: "%B %d, %Y" }}</span>
+            <span class="blog-category-badge category-{{ post.category | downcase }}">{{ post.category }}</span>
+          </div>
+          <h3 class="blog-recent-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+          <p class="blog-recent-excerpt">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
+          <a href="{{ post.url | relative_url }}" class="blog-recent-link">
+            Read Post
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+        </article>
+      {% endfor %}
+    </div>
+  {% else %}
+    <div class="blog-home-empty">
+      <p>No posts published yet. Stay tuned for tutorials, debugging stories, and research notes!</p>
+    </div>
+  {% endif %}
+
+  <div class="blog-home-footer">
+    <a href="{{ '/blog/' | relative_url }}" class="btn btn-secondary">
+      View All Posts
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+      </svg>
+    </a>
+  </div>
+</section>
+
+<!-- ==========================================================================
      PUBLICATIONS SECTION
      ========================================================================== -->
 <section id="publications">

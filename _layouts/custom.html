@@ -38,14 +38,15 @@
     <!-- Sticky Navigation Bar -->
     <header class="navbar-header" id="navbar">
         <div class="nav-container">
-            <a href="#about" class="nav-brand">Changjae Lee</a>
+            <a href="{{ '/' | relative_url }}#about" class="nav-brand">Changjae Lee</a>
             
             <nav class="nav-menu">
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#publications">Publications</a>
-                <a href="#experience">Experience</a>
-                <a href="#skills">Skills & Awards</a>
+                <a href="{{ '/' | relative_url }}#about">About</a>
+                <a href="{{ '/' | relative_url }}#projects">Projects</a>
+                <a href="{{ '/' | relative_url }}#publications">Publications</a>
+                <a href="{{ '/' | relative_url }}#experience">Experience</a>
+                <a href="{{ '/' | relative_url }}#skills">Skills & Awards</a>
+                <a href="{{ '/blog/' | relative_url }}">Blog</a>
             </nav>
             
             <div class="nav-actions">
@@ -116,26 +117,41 @@
         // Active Navigation Highlight & Smooth Scroll Offset
         const sections = document.querySelectorAll('section[id]');
         const navItems = document.querySelectorAll('.nav-menu a');
-        
-        window.addEventListener('scroll', () => {
-            let current = '';
-            const scrollPos = window.scrollY + 120; // offset navbar height
+        const currentPath = window.location.pathname;
 
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.offsetHeight;
-                if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
-                    current = section.getAttribute('id');
-                }
-            });
-
+        // If on blog pages, highlight Blog link
+        if (currentPath.includes('/blog')) {
             navItems.forEach(item => {
-                item.classList.remove('active');
-                if (item.getAttribute('href').slice(1) === current) {
+                const href = item.getAttribute('href');
+                if (href && href.includes('/blog')) {
                     item.classList.add('active');
+                } else {
+                    item.classList.remove('active');
                 }
             });
-        });
+        } else {
+            // Scroll highlight logic for home page
+            window.addEventListener('scroll', () => {
+                let current = '';
+                const scrollPos = window.scrollY + 120; // offset navbar height
+
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.offsetHeight;
+                    if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navItems.forEach(item => {
+                    item.classList.remove('active');
+                    const href = item.getAttribute('href');
+                    if (href && href.endsWith('#' + current)) {
+                        item.classList.add('active');
+                    }
+                });
+            });
+        }
     </script>
 </body>
 </html>
