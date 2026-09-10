@@ -44,8 +44,8 @@ Create a dedicated workspace directory and clone the three required repositories
 mkdir -p ~/mlmodelscope2
 cd ~/mlmodelscope2
 
-git clone https://github.com/c3sr/mlmodelscope
-git clone https://github.com/c3sr/mlmodelscope-api
+git clone https://github.com/xlab-ub/mlmodelscope
+git clone https://github.com/xlab-ub/mlmodelscope-api
 git clone https://github.com/xlab-ub/py-mlmodelscope
 ```
 
